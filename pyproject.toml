@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 80
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 80
+default_section = "FIRSTPARTY"
+known_first_party = []
+known_third_party = []
+
+[tool.vulture]
+min_confidence = 65
+sort_by_size = true
+paths = ["."]
