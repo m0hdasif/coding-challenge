@@ -13,8 +13,8 @@ def num_to_n_in_matrix_by_formula(n: int):
 
 def num_to_n_in_matrix_by_increment(n: int):
     val = 0
-    for _ in range(1, n + 1):
-        for _ in range(1, n + 1):
+    for _ in range(n):
+        for _ in range(n):
             val += 1
             print(val, end=" ")
         print()
