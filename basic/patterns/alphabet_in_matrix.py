@@ -3,6 +3,9 @@
 # B C D
 # E F G
 
+# NOTE: chr changes char to int
+# NOTE: ord changes char to int representing unicode code
+
 
 def alphabets_in_matrix(n: int):
     for row in range(n):
