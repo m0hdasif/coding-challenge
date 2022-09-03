@@ -2,6 +2,10 @@ Learn:
     Basic:
         ☐ Calculate sqrt of a number without any library @created(22-09-02 16:53)
         ☐ Roman numeral with both recursive and iterative @created(22-09-02 16:55)
+    Sorting:
+        ☐ Implement sorting of all type with time complexity @created(22-09-03 00:55)
+            ☐ Quick sort @created(22-09-03 01:02)
+            ☐ Tim sort @created(22-09-03 01:02)
     Tree:
         ☐ Learn Binary Tree Definition and Traveral @created(22-08-13 15:04)
 
