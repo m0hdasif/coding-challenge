@@ -1,7 +1,7 @@
+# only 1 duplicate number from 0 to n-1
 class Solution:
-    def find_duplicate_in_array(
-        self, arr: list[int]
-    ) -> int:  # T(n)=O(n), S(n)=O(n)
+    # T(n)=O(n), S(n)=O(n)
+    def find_duplicate_in_array(self, arr: list[int]) -> int:
         new_array = [None] * len(arr)
         for elem in arr:
             if new_array[elem]:
@@ -11,9 +11,8 @@ class Solution:
         return None
 
     # xor twice cancels the element and return 0
-    def find_duplicate_in_array_by_xor(
-        self, arr: list[int]
-    ) -> int:  # T(n)=O(n), S(n)=O(1)
+    # T(n)=O(n), S(n)=O(1)
+    def find_duplicate_in_array_by_xor(self, arr: list[int]) -> int:
         ans = 0
         for elem in arr:
             ans ^= elem
