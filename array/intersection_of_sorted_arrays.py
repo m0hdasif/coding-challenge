@@ -1,3 +1,4 @@
+# get the common elements from 2 sorted arrays
 def get_intersection(nums1: list[int], nums2: list[int]) -> list[int]:
     index1 = 0
     index2 = 0
@@ -19,5 +20,5 @@ def get_intersection(nums1: list[int], nums2: list[int]) -> list[int]:
 if __name__ == "__main__":
     arr1 = [1, 2, 2, 2, 3, 4]
     arr2 = [2, 2, 3, 3]
-    common_elements = get_intersection(arr1, arr2)
+    common_elements = get_intersection(arr1, arr2)  # output => [2, 2, 3]
     print(common_elements)  # noqa
