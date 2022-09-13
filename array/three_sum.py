@@ -23,7 +23,7 @@ def three_sum(arr: list[int], target) -> list[int]:
 # T(n): O(n^2) # [O(nlogn) +O(n^2)]
 # S(n): O(1)
 
-# Sol4 : using 3 pointers -> basic logic is similar to above
+# Sol4 : using 3 pointers -> basic logic is similar to above(https://www.code-recipe.com/post/three-sum)
 # T(n): O(n^2) # [O(nlogn) +O(n^2)]
 # S(n): O(1)
 if __name__ == "__main__":
