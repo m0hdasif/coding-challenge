@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/peak-index-in-a-mountain-array/
 # it will return index of peak value and min elements in array ==3
 def find_peak_index(arr: list[int]) -> int:
     start = 0
