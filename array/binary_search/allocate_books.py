@@ -1,6 +1,6 @@
 # https://www.codingninjas.com/codestudio/problems/allocate-books_1090540
 
-# return max number of page can be assigned and book distribution
+# return max number of page can be assigned to evenly distribute(minimum difference) and book distribution
 def allocate_books(
     books: list[int], no_of_students: int
 ) -> tuple[int, list[int]]:
@@ -40,6 +40,7 @@ def is_possible_to_allocate(books: list[int], no_of_students: int, mid):
             no_of_allocated_students += 1
             if (no_of_allocated_students) > no_of_students or book_pages > mid:
                 return False
+            no_of_allocated_pages = book_pages
     return True
 
 
