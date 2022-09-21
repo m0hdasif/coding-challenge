@@ -39,6 +39,24 @@ def __rotate_array_to_given_index(nums, index):
         i -= 1
 
 
+# T(n) = O(n+m)
+# S(n) = O(1)
+def merge_sorted_array(nums1: list[int], nums2: list[int]) -> None:
+    n1 = len(nums1) - len(nums2) - 1
+    n2 = len(nums2) - 1
+    merged_index = len(nums1) - 1
+    while n1 >= 0 and n2 >= 0:
+        if nums1[n1] >= nums2[n2]:
+            nums1[merged_index] = nums1[n1]
+            n1 -= 1
+        else:
+            nums1[merged_index] = nums2[n2]
+            n2 -= 1
+        merged_index -= 1
+    if n2 >= 0:
+        nums1[: n2 + 1] = nums2[: n2 + 1]
+
+
 if __name__ == "__main__":
 
     def get_nums1():
@@ -50,4 +68,7 @@ if __name__ == "__main__":
     print(nums1)
     nums1 = get_nums1()
     merge_sorted_array_with_fixed_length(nums1, nums2)
+    print(nums1)
+    nums1 = get_nums1()
+    merge_sorted_array(nums1, nums2)
     print(nums1)
