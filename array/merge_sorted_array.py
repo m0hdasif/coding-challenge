@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/merge-sorted-array/
 # S(n) = O(1)
-# T(n) = O(n)
+# T(n) = O(n+m)
 def merge_sorted_array_with_dynamic_length(
     nums1: list[int], nums2: list[int]
 ) -> None:
