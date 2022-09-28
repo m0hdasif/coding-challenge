@@ -8,7 +8,7 @@ multi_line_output = 3
 line_length = 80
 default_section = "FIRSTPARTY"
 known_first_party = []
-known_third_party = ["pair_two_sum", "search_elem"]
+known_third_party = ["is_prime", "pair_two_sum", "search_elem"]
 
 [tool.vulture]
 min_confidence = 65
