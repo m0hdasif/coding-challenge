@@ -2,6 +2,7 @@ Learn:
     Basic:
         ☐ Calculate sqrt of a number without any library @created(22-09-02 16:53)
         ☐ Roman numeral with both recursive and iterative @created(22-09-02 16:55)
+        ☐ https://www.geeksforgeeks.org/factorial-large-number/ @created(22-09-29 13:34)
     DS:
         ☐ Implement Stack and Queue using deque @created(22-09-21 01:22)
     Sorting:
@@ -17,3 +18,5 @@ Learn:
 
     Misc:
         ☐ Pigeon hole principle @created(22-09-29 13:31)
+        ☐ Catalan number @created(22-09-29 13:32)
+        ☐ Inclusion and exclusion principle @created(22-09-29 13:32)
