@@ -26,15 +26,15 @@ def modular_exponentiation_v2(base: int, exponent: int, divisor: int) -> int:
         return base % divisor
     val = modular_exponentiation_v2(base, exponent // 2, divisor)
     return (
-        (val * val) % divisor
-        if exponent % 2 == 0
-        else (base * val * val) % divisor
+        (base * val * val) % divisor
+        if exponent & 1  # ? is odd
+        else (val * val) % divisor
     )
 
 
 if __name__ == "__main__":
     x = 10**8 - 1
-    n = 10**6
+    n = 10**6 + 1
     m = 10
     print(f"{modular_exponentiation_v2(x, n, m)=}")
     print(f"{modular_exponentiation_v1(x, n, m)=}")
