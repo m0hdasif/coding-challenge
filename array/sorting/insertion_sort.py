@@ -13,4 +13,4 @@ def insertion_sort(arr: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     arr = [5, 3, 1, 4, 1, 1, 2, 4, 6, 10, 8]
-    print(f"{insertion_sort(arr)}")
+    print(f"{insertion_sort(arr)=}")

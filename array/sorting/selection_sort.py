@@ -16,4 +16,4 @@ def selection_sort(arr: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     arr = [5, 3, 1, 4, 1, 2, 4, 10, 7, 6, 8, 9]
-    print(f"{selection_sort(arr)}")
+    print(f"{selection_sort(arr)=}")
