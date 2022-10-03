@@ -1,28 +1,32 @@
 def quicksort(arr, start=0, end=None):
-    if not end:
+    if end is None:
         end = len(arr) - 1
-
     if start >= end:
         return arr
     p = partition(arr, start, end)
-    if start <= p <= end:
-        quicksort(arr, start, p - 1)
-        quicksort(arr, p + 1, end)
+    quicksort(arr, start, p - 1)
+    quicksort(arr, p + 1, end)
     return arr
 
 
 def partition(arr, start, end):
-    chosen_random_index = start
-    pivot_index = sum(el < arr[chosen_random_index] for el in arr)
-    arr[chosen_random_index], arr[pivot_index] = (
-        arr[pivot_index],
-        arr[chosen_random_index],
+    chosen_pivot = start
+    # move 1st value to correct position
+    pivot_index = start + sum(
+        el <= arr[chosen_pivot] for el in arr[start + 1 : end + 1]
     )
+    arr[chosen_pivot], arr[pivot_index] = (
+        arr[pivot_index],
+        arr[chosen_pivot],
+    )
+    # keep left lesser than pivot and right greater than pivot_index
     i = start
     j = end
     while i < pivot_index and j > pivot_index:
         if arr[i] > arr[j]:
             arr[i], arr[j] = arr[j], arr[i]
+            i += 1
+            j -= 1
         if arr[i] <= arr[pivot_index]:
             i += 1
         if arr[j] >= arr[pivot_index]:
