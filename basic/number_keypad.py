@@ -19,6 +19,8 @@ def get_possible_text(nums: str) -> list[str]:
 
 
 def get_possible_text_recursive(nums: str) -> list[str]:
+    if not nums:
+        return [""]
     if len(nums) == 1:
         return get_chars(int(nums))
     sub_values = get_possible_text_recursive(nums[1:])
