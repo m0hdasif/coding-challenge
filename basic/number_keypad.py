@@ -18,5 +18,16 @@ def get_possible_text(nums: str) -> list[str]:
     return values
 
 
+def get_possible_text_recursive(nums: str) -> list[str]:
+    if len(nums) == 1:
+        return get_chars(int(nums))
+    sub_values = get_possible_text_recursive(nums[1:])
+    final_values = []
+    for char in get_chars(int(nums[0])):
+        final_values.extend(char + v for v in sub_values)
+    return final_values
+
+
 if __name__ == "__main__":
     print(get_possible_text("2743"))
+    print(get_possible_text_recursive("2743"))
