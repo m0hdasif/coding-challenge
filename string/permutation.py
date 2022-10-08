@@ -21,7 +21,20 @@ def get_permutation(string: str) -> list[str]:
     return results
 
 
+def get_permutation_v2(string: str, index: int = 0) -> list[str]:
+    results = []
+    chars = list(string)
+    if index == len(string):
+        return [string]
+    for i in range(index, len(chars)):
+        chars[i], chars[index] = chars[index], chars[i]
+        results.extend(get_permutation_v2("".join(chars), index + 1))
+        # you may swap back the chars again
+    return results
+
+
 if __name__ == "__main__":
     val = "yum"
     print(builtin_permutations(val))
     print(get_permutation(val))
+    print(get_permutation_v2(val))
