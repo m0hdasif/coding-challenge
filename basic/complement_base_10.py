@@ -1,11 +1,11 @@
 # https://leetcode.com/problems/complement-of-base-10-integer/
-
+# Lecture 7: LeetCode Problem Solving Session https://www.youtube.com/watch?v=0fwrMYPcGQ0&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&index=7
 
 def bitwise_complement_by_shift_left(n: int) -> int:
     if n == 0:
         return 1
     shifting_key = 1
-    # perform until shifting_key shift till max digit of n
+    # perform until shifting_key shift till max digit of n (001-> 010-> 100-> 1000 ...)
     while shifting_key <= n:
         n ^= shifting_key
         shifting_key <<= 1

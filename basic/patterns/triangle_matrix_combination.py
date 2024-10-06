@@ -10,7 +10,7 @@
 # 1 2 3 @ @ @ @ 3 2 1
 # 1 2 3 4 @ @ 4 3 2 1
 # 1 2 3 4 5 5 4 3 2 1
-
+# Video: Lecture 4: Solving Pattern Questions (Part-2) https://youtu.be/dr-pLeJBr38?si=w4d_fD2bcXT6iIui&t=3737
 
 def print_combine_pattern(total_n_count, special_char="@"):
 

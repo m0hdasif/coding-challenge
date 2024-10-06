@@ -4,7 +4,7 @@
 # E F G
 
 # NOTE: chr changes char to int
-# NOTE: ord changes char to int representing unicode code
+# NOTE: ord changes char to int representing Unicode code
 
 
 def alphabets_in_matrix(n: int):
