@@ -1,3 +1,5 @@
+# https://www.naukri.com/code360/problems/aggressive-cows_1082559
+
 def find_max_distance(positions: list[int], total_cattle: int) -> int:
     start = 0
     end = max(positions)
